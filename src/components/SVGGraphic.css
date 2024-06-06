@@ -1,0 +1,23 @@
+#svg-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .rotating-svg {
+    transition: transform 0.5s ease-in-out;
+    animation: rotate 5s linear infinite;
+  }
+  
+  .rotating-svg:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
